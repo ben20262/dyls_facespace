@@ -26,6 +26,8 @@ gem 'devise'
 
 gem 'omniauth'
 
+gem 'dotenv'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
