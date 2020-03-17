@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DylsFacespace</title>
+    <title>Dyls Facespace</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,8 @@
   </head>
 
   <body>
+    <h1><%= button_to "Dyls FaceSpace", root_path %></h1>
+    <%= render :nav %>
     <%= yield %>
   </body>
 </html>

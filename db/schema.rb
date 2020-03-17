@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_14_023032) do
+ActiveRecord::Schema.define(version: 2020_03_17_015758) do
+
+  create_table "messages", force: :cascade do |t|
+    t.integer "seller_id"
+    t.text "message"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.float "price"
+    t.string "link"
+    t.datetime "created"
+  end
+
+  create_table "sellers", force: :cascade do |t|
+    t.string "name"
+    t.string "link"
+  end
+
+  create_table "settings", force: :cascade do |t|
+    t.integer "price_max"
+    t.integer "price_min"
+    t.integer "percent"
+    t.text "message_blank"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
