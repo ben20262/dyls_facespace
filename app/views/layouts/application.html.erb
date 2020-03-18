@@ -10,8 +10,8 @@
   </head>
 
   <body>
-    <h1><%= button_to "Dyls FaceSpace", root_path %></h1>
-    <%= render :nav %>
+    <h1><%= link_to "Dyls FaceSpace", root_path %></h1>
+    <%= render 'layouts/nav' %>
     <%= yield %>
   </body>
 </html>

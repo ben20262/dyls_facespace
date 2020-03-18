@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_03_17_015758) do
     t.string "title"
     t.float "price"
     t.string "link"
+    t.integer "seller_id"
     t.datetime "created"
   end
 

@@ -4,10 +4,6 @@ class FacesController < ApplicationController
 
     end
 
-    def show
-        
-    end
-
     def settings
         @settings = Setting.first
     end
@@ -28,12 +24,12 @@ class FacesController < ApplicationController
         @seller = Seller.find(params[:id])
     end
 
-    def cars
-        @cars = Car.all
+    def posts
+        @posts = Post.all
     end
 
-    def car
-        @car = Car.find(params[:id])
+    def post
+        @post = Post.find(params[:id])
     end
 
 end
