@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
   get '/settings', to: 'faces#settings', as: 'settings'
 
+  Facebook::Messenger::Server, at: "bot"
 end
