@@ -23,7 +23,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 
 # Facebook grouping
-gem 'devise'
 gem 'omniauth-facebook'
 gem 'dotenv'
 gem 'facebook-messenger'
