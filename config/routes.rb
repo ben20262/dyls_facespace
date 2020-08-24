@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   root :to => 'faces#index'
@@ -14,6 +13,4 @@ Rails.application.routes.draw do
   get '/posts/:id', to: 'faces#post', as: 'post'
 
   get '/settings', to: 'faces#settings', as: 'settings'
-
-  Facebook::Messenger::Server, at: "bot"
 end
